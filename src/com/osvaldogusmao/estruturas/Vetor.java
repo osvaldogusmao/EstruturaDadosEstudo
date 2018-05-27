@@ -19,8 +19,17 @@ public class Vetor {
 		}
 	}
 
+	public int ultimaPosicao() {
+		return ultimaPosicao;
+	}
+	
 	@Override
 	public String toString() {
+		
+		for (int i = 0; i < elementos.length; i++) {
+			
+		}
+		
 		return "Este elemento possui: " + this.elementos.length;
 	}
 }
