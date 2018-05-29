@@ -66,8 +66,8 @@ public class Vetor {
 	}
 
 	private int ultimoEspacoPreenchido() {
-		int pos = this.elementos.length-1;
-		for (int i = this.elementos.length-1; i > 0 ; i--) {
+		int pos = this.elementos.length - 1;
+		for (int i = this.elementos.length - 1; i > 0; i--) {
 			if (this.elementos[i] != null) {
 				pos = i;
 				break;

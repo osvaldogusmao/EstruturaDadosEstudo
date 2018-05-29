@@ -26,6 +26,11 @@ public class VetorTesteDois {
 
 		System.out.println(vetor.toString());
 
+		vetor.adiciona("H", 8);
+		
+		System.out.println(vetor.toString());
+		
+		
 	}
 
 }
