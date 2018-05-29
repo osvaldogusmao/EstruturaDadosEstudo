@@ -33,7 +33,6 @@ public class VetorGenerico {
 		}
 	}
 
-	
 	public int busca(Object elemento) {
 		for (int i = 0; i < elementos.length; i++) {
 			if (this.elementos[i].equals(elemento)) {
@@ -44,21 +43,21 @@ public class VetorGenerico {
 	}
 
 	public void removeElementoPorPosicao(int posicao, boolean preencherEspaco) {
-		
-		if(!preencherEspaco) {
+
+		if (!preencherEspaco) {
 			this.elementos[posicao] = null;
-		}else {
-			for (int i = posicao; i < (elementos.length - 1) ; i++) {
+		} else {
+			for (int i = posicao; i < (elementos.length - 1); i++) {
 				this.elementos[i] = this.elementos[i + 1];
 			}
-			this.elementos[this.elementos.length-1] = null;
+			this.elementos[this.elementos.length - 1] = null;
 		}
 	}
 
 	public void removeElementoPorConteudo(String elemento, boolean b) {
 		this.removeElementoPorPosicao(this.busca(elemento), true);
 	}
-	
+
 	private void aumentaCapacidade() {
 
 		if (this.proximoEspacoNulo() < 0) {
@@ -107,13 +106,9 @@ public class VetorGenerico {
 				if (i < this.ultimoEspacoPreenchido()) {
 					s.append(",");
 				}
-
 			}
-
 		}
-
 		s.append("]");
-
 		return s.toString();
 	}
 }
