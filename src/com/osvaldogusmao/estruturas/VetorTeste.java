@@ -14,11 +14,16 @@ public class VetorTeste {
 			vetor.adiciona("4 Elemento");
 			vetor.removeElemento(0);
 			vetor.adiciona("Novo teste");
+			System.out.println(vetor.busca(0));
+			System.out.println(vetor.toString());
+			System.out.println(vetor.busca("José"));
+			System.out.println(vetor.busca("Novo teste"));
+			System.out.println(vetor.busca("Elaine"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		System.out.println(vetor.toString());
+		
 
 	}
 }
