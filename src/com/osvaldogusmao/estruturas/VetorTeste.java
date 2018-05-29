@@ -9,10 +9,10 @@ public class VetorTeste {
 			vetor.adiciona("Osvaldo");
 			vetor.adiciona("3 Elemento");
 			vetor.adiciona("Elaine");
-			vetor.removeElemento(2);
+			vetor.removeElementoPorPosicao(2,false);
 			vetor.adiciona("3 Elemento Novo");
 			vetor.adiciona("4 Elemento");
-			vetor.removeElemento(0);
+			vetor.removeElementoPorPosicao(0, false);
 			vetor.adiciona("Novo teste");
 			System.out.println(vetor.busca(0));
 			System.out.println(vetor.toString());
